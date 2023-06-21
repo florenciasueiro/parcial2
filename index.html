@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Programación I | Parcial 2 | APELLIDO/S</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/231d7a05ce.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-BDzFvYZDd3fuTn0B1d9EDcx6zhrC/N31AAm0u9TGhXkySDU7IVfZEYSDwQ4Uy5rO" crossorigin="anonymous">
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    
+    
+    </head>
+    <body>
+        <!-- <header>
+            <h1>Programación I | Parcial 2 | APELLIDO/S | Mi carrito</h1>
+        </header> -->
+        <main>
+
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="four columns">
+                      <img class="logo" src="img/Logo.png" alt="Logo">
+                    </div>
+
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="">Sobre Nosotros</a></li>
+                            <li><a href="">Tipos de vinos</a></li>
+                            <li><a href="">Maridaje</a></li>
+                            <li><a href="">Comprar</a></li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="contador-carrito">0</span>
+                                    <div id="carrito">
+                                            <table id="lista-carrito" class="u-full-width">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Imagen</th>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+        
+                                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div> 
+            </div>
+            </header>
+        
+            <div id="lista-cursos" class="container">
+                <h1 id="encabezado" class="encabezado">Vinos</h1>
+
+                <div class="containerProduct"> 
+                    <div class="tipos">
+                        <h1 class="tiposDeVinos">Tintos</h1>
+                    </div>
+                    <div id="slideContainerTintos" class="slideHorizontal">
+                    </div>
+                </div>
+                
+                <div class="containerProduct"> 
+                    <div class="tipos">
+                        <h1 class="tiposDeVinos">Blancos</h1>
+                    </div>
+                    <div id="slideContainerBlancos" class="slideHorizontal">
+                    </div>
+                </div>
+                
+                <div class="containerProduct"> 
+                    <div class="tipos">
+                        <h1 class="tiposDeVinos">Rosados</h1>
+                    </div>
+                    <div id="slideContainerRosados" class="slideHorizontal">
+                    </div>
+                </div>
+                
+                <div class="containerProduct"> 
+                    <div class="tipos">
+                        <h1 class="tiposDeVinos">Espumosos</h1>
+                    </div>
+                    <div id="slideContainerEspumosos" class="slideHorizontal">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor Fabrizio Carlassara</li>
+                <li>
+                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+            </ul>
+        </footer>
+
+        <!-- Generar el div#modalProducto y su contenido dinámicamente
+        <div class="modal" id="modalProducto">
+            <a class="cerrar" href="javascript:void(0)">X</a>
+            <img src="producto-de-ejemplo.jpg" alt="Nombre del producto" />
+            <h3>Producto</h3>
+            <p>Descripción</p>
+            <p>Precio: <span>$0</span></p>
+            <p>Categoría</p>
+            <button>Agregar</button>
+        </div> -->
+
+        <!-- Generar el div#modalCarrito y su contenido dinámicamente
+        <div class="modal" id="modalCarrito">
+            <a class="cerrar" href="javascript:void(0)">X</a>
+            <p>Items: <span>3</span> - Total: <span>$0</span></p>
+            <hr />
+            <ul>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+                <li>Nombre del producto <span>$0</span> <span>0 items</span> <a href="#">Eliminar</a></li>
+            </ul>
+            <button>Vaciar</button>
+            <button>Ir al checkout</button>
+        </div> -->
+        <script src="index.js"></script>
+        <script>
+        </script>
+          
+    </body>
+</html>
